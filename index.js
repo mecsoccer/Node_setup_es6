@@ -7,7 +7,6 @@ app.get('/', (req, res) => {
   res.json({ message: 'ci with travis' });
 });
 
-
 const port = '8000';
 app.set('port', port);
 
