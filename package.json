@@ -1,0 +1,47 @@
+{
+  "name": "node_setup_es6",
+  "version": "1.0.0",
+  "description": "node project showing setup for using es6, babel, mocha, chai, eslint and integrating travis CI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "test": "./node_modules/.bin/mocha --require @babel/register",
+    "lint": "./node_modules/.bin/eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mecsoccer/Node_setup_es6.git"
+  },
+  "keywords": [
+    "node.js",
+    "es6",
+    "babel",
+    "mocha",
+    "chai",
+    "eslint",
+    "travis",
+    "Ci"
+  ],
+  "author": "Jaachimma Onyenze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mecsoccer/Node_setup_es6/issues"
+  },
+  "homepage": "https://github.com/mecsoccer/Node_setup_es6#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0"
+  }
+}
